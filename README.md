@@ -2,7 +2,7 @@
 
 Welcome! This is a **Next.js 13** project with **Firebase Authentication**.  
 Users can **register, log in, and log out** using email/password.  
-The project is **modular, scalable, and easy to maintain**, with hooks, context, and reusable components.  
+The project is **modular, scalable, and easy to maintain**, with hooks, context, and reusable components.
 
 ---
 
@@ -20,32 +20,28 @@ The project is **modular, scalable, and easy to maintain**, with hooks, context,
 
 ## 📁 Project Structure
 
-/app
-page.tsx # Login page wrapper
-home/page.tsx # Home page wrapper
+- **/app**
+  - `page.tsx` – Login page wrapper  
+  - `home/page.tsx` – Home page wrapper  
 
-/components
-LoginForm.tsx # Login & registration UI
-HomePage.tsx # Home page with logout
+- **/components**
+  - `LoginForm.tsx` – Login & registration UI  
+  - `HomePage.tsx` – Home page with logout  
 
-/hooks
-useAuth.ts # Custom hook for auth
+- **/hooks**
+  - `useAuth.ts` – Custom hook for auth  
 
-/lib
-firebase.ts # Firebase setup
+- **/lib**
+  - `firebase.ts` – Firebase setup  
 
-/context
-AuthContext.tsx # Global auth state
-
-yaml
-Copy code
+- **/context**
+  - `AuthContext.tsx` – Global auth state  
 
 ---
 
 ## ⚡ Getting Started
 
 ### 1️⃣ Clone the repository
-
 ```bash
 git clone https://github.com/sreekuttyajamalan/nextjs-firebase-auth.git
 cd nextjs-firebase-auth
@@ -62,9 +58,9 @@ Create a new project
 
 Enable Email/Password Authentication
 
-Add your Firebase config in a .env.local file:
+Create a .env.local file in the root and add your credentials:
 
-ini
+env
 Copy code
 NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
@@ -81,15 +77,15 @@ yarn dev
 Open http://localhost:3000 to view the app.
 
 📝 How It Works
-LoginForm.tsx handles login and registration with validation.
+LoginForm.tsx – Handles login and registration with validation
 
-AuthContext.tsx manages global auth state.
+AuthContext.tsx – Manages global auth state
 
-useAuth.ts is a custom hook to access auth state easily.
+useAuth.ts – Custom hook to access auth state easily
 
-HomePage.tsx shows personalized greeting and logout.
+HomePage.tsx – Shows personalized greeting and logout
 
-Protected routing ensures users must log in to access Home page.
+Protected routing – Ensures users must log in to access Home page
 
 🛠 Technologies
 Next.js 13
@@ -98,29 +94,25 @@ React 18
 
 Firebase Authentication
 
-Tailwind CSS
-
 TypeScript
 
 🎯 Advantages
-Clean and maintainable structure
+✨ Clean and maintainable structure
 
-Reusable components & hooks
+♻️ Reusable components & hooks
 
-Scalable for adding new features
+🚀 Scalable for adding new features
 
-User-friendly, responsive UI
+🎨 User-friendly, responsive UI
 
 🤝 Contributing
-Fork the repo
+🍴 Fork the repo
 
-Create a branch (git checkout -b feature/new-feature)
+🌿 Create a branch (git checkout -b feature/new-feature)
 
-Make changes and commit
+✏️ Make changes and commit
 
-Push (git push origin feature/new-feature)
+⬆️ Push (git push origin feature/new-feature)
 
-Open a pull request
+🔀 Open a pull request
 
-📄 License
-MIT License – see LICENSE file.
